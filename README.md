@@ -1,5 +1,10 @@
 # 🎓 Academic Credential Verification System
-
+Team Name: CodeCrafters
+Team Members
+1. Padmashree U
+2. Balasubramanian B
+3. Vinaya C P
+4. Ishwarya S
 ## 🔗 Overview
 The **Academic Credential Verification System** is a **blockchain-powered web application** that ensures the secure issuance and verification of academic credentials. It eliminates **degree fraud** by leveraging blockchain technology to store credentials in a tamper-proof and decentralized manner.
 
