@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="chain-container">
+    <h2>Blockchain Explorer</h2>
+    {% for block in chain %}
+    <div class="block">
+        <h3>Block #{{ block.index }}</h3>
+        <p><strong>Hash:</strong> {{ block.hash }}</p>
+        <p><strong>Previous Hash:</strong> {{ block.previous_hash }}</p>
+        
+        {% if block.credentials %}
+        <div class="credentials">
+            <h4>Credentials:</h4>
+            <ul>
+                {% for cred in block.credentials %}
+                <li>
+                    <strong>Student ID:</strong> {{ cred.student_id }} <br>
+                    <strong>Institution:</strong> {{ cred.institution }} <br>
+                    <strong>Degree:</strong> {{ cred.degree }} <br>
+                    <strong>Year:</strong> {{ cred.year }} <br>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="form-container">
+    <h2>Verify Credential</h2>
+    <form method="POST">
+        <input type="text" name="student_id" placeholder="Student ID" required>
+        <input type="text" name="institution" placeholder="Institution" required>
+        <input type="text" name="degree" placeholder="Degree" required>
+        <input type="text" name="year" placeholder="Year" required>
+        <button type="submit" class="btn">Verify</button>
+    </form>
+    {% if result is not none %}
+        <p class="{{ 'success' if result else 'error' }}">{{ "✅ Verified!" if result else "❌ Not Found!" }}</p>
+    {% endif %}
+</div>
+{% endblock %}

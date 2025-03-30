@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero">
+    <h2>Welcome to Academic Credential Verification</h2>
+    <a href="{{ url_for('issue') }}" class="btn">Issue Credential</a>
+    <a href="{{ url_for('verify') }}" class="btn">Verify Credential</a>
+</div>
+{% endblock %}
