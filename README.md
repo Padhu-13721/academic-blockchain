@@ -56,6 +56,7 @@ Universities issuing digital degrees.
 Employers verifying a candidate's qualifications.
 Government organizations ensuring authenticity of certificates.
 
+
 🌟 Contributing
 Feel free to fork this repo, improve it, and submit a pull request. Contributions are welcome!
 
